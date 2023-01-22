@@ -1,4 +1,6 @@
 import React from 'react'
+import Footer from './Footer'
+
 
 const Home = () => {
   return (
@@ -69,97 +71,87 @@ const Home = () => {
             </div>
         </div>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <div style={{height:"1000px",backgroundColor:"rgba(147,147,147,255)"}}>
-        <h1>Coach at your service.</h1>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)"}} >
+        <div style={{height:"790px",backgroundColor:"#ebebeb"}}>
+        <h1 style={{fontSize:"50px",padding:"30px",color:"rgba(20,24,31,255)"}}>Coach at your service.</h1>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:"40px",width:"80%",margin:"auto",marginTop:"40px"}} >
             <div>
                 <img src="https://cms.coach.com/i/coach/icon-customize.png" width="20%" alt="" />
-                <h2>Coach Create Customization</h2>
+                <h3>Coach Create Customization</h3>
                 <p>Our craftsmen can embellish, rivet, or digitally print your designs.</p>
-                <p>EXPLORE</p>
+                <p style={{textDecoration:"underline"}}>EXPLORE</p>
             </div>
             <div>
             <img src="https://cms.coach.com/i/coach/coach-insider-hp-icon" width="20%" alt="" />
-                <h2>Coach Insider</h2>
+                <h3>Coach Insider</h3>
                 <p>Instant rewards & more good things.</p>
-                <p>LEARN MORE</p>
+                <p style={{textDecoration:"underline"}} >LEARN MORE</p>
             </div>
             <div>
             <img src="https://cms.coach.com/i/coach/icon-klarna.png" width="20%" alt="" />
-                <h2></h2>
+                <h3>Buy Now, Pay Later</h3>
                 <p>Split your total into four easy, interest-free payments with Klarna.</p>
-                <p>LEARN MORE</p>
+                <p style={{textDecoration:"underline"}}>LEARN MORE</p>
             </div>
             <div>
             <img src="https://cms.coach.com/i/coach/icon-bopus.png" width="20%" alt="" />
-                <h2>More Ways to Shop</h2>
+                <h3>More Ways to Shop</h3>
                 <p>Select stores now offer pickup and virtual shopping appointments.</p>
-                <p>LEARN MORE</p>
+                <p style={{textDecoration:"underline"}}>LEARN MORE</p>
             </div>
             <div>
             <img src="https://cms.coach.com/i/coach/icon-free-ship.png" width="20%" alt="" />
-                <h2>Free Shipping & Returns</h2>
+                <h3>Free Shipping & Returns</h3>
                 <p>On all orders.</p>
-                <p>ABOUT SHIPPING</p>
-                <p>ABOUT RETURNS</p>
+                <p style={{textDecoration:"underline"}}>ABOUT SHIPPING</p>
+                <p style={{textDecoration:"underline"}}>ABOUT RETURNS</p>
             </div>
             <div>
             <img src="https://cms.coach.com/i/coach/icon-invite-friend.png" width="20%" alt="" />
-                <h2>Give $20, get $20.</h2>
+                <h3>Give $20, get $20.</h3>
                 <p>When a friend makes their first purchase of $250. (Get $30 if you sign in or sign up to be an Insider!).</p>
-                <p>SIGN IN/SIGN UP</p>
-                <p>S</p>
+                <p style={{textDecoration:"underline"}}>SIGN IN/SIGN UP</p>
+                <p style={{textDecoration:"underline"}}>INVITE FRIENDS</p>
             </div>
             <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
+            <img src="https://cms.coach.com/i/coach/icon-sms.png" width="20%" alt="" />
+                <h3>Get $15 off your $150 order.
+Get $15 off your $150 order</h3>
+                <p>When you sign up for text messages.</p>
+                <p style={{textDecoration:"underline"}}>SIGN UP FOR TEXTS</p>
             </div>
             <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
+            <img src="https://cms.coach.com/i/coach/icon-klarna.png" width="20%" alt="" />
+                <h3>Buy Now, Pay Later</h3>
+                <p>Split your total into four easy, interest-free payments with Klarna.</p>
+                <p style={{textDecoration:"underline"}}>LEARN MORE</p>
             </div>
             <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
+            <img src="https://cms.coach.com/i/coach/icon-repairs.png" width="20%" alt="" />
+                <h3>One-Year Warranty & Repairs</h3>
+                <p>All repairs are handled with care by our Coach Repair Workshop.</p>
+                <p style={{textDecoration:"underline"}}>REPAIR SERVICES</p>
             </div>
             <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
+            <img src="https://cms.coach.com/i/coach/icon-gift-services.png" width="20%" alt="" />
+                <h3>Gift Services</h3>
+                <p>Complimentary gift wrap and more.</p>
+                <p style={{textDecoration:"underline"}}>SEE ALL</p>
             </div>
-            <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
-            </div>
-            <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
-            </div>
-            <div>
-            <img src="" width="20%" alt="" />
-                <h2></h2>
-                <p>.</p>
-                <p></p>
-            </div>
-
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
+        </div>
+
+        <div>
+            <h1>We look good together.</h1>
+            <h3>Keep carrying (and tagging) @coach. #CoachNY</h3>
+            <button>SHOP NEW ARRIVALS</button>
+            <button>EXPLORE THE COMMUNITY</button>
+            <button>FOLLOW US ON INSTAGRAM</button>
+        </div>
+        <div>
+            carousel
+        </div>
+        <div>
+            <Footer/>
         </div>
 
     </>

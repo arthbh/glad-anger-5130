@@ -1,38 +1,46 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 
 
 
 const Links = [
     {path:'/',title:"Home"},
-    {path:'/',title:"NEW"},
-    {path:'/',title:"SHOP BY"},
+    {path:'/new',title:"NEW"},
+    {path:'/shop',title:"SHOP BY"},
     {path:'/women',title:"WOMEN"},
     {path:'/men',title:"MEN"},
     {path:'/bags',title:"BAGS"},
-    {path:'/',title:"COACH (RE)LOVED"},
-    {path:'/',title:"COACH INSIDER"},
-    {path:'/',title:"SALE"},
+    {path:'/coach',title:"COACH (RE)LOVED"},
+    {path:'/insi',title:"COACH INSIDER"},
+    {path:'/sale',title:"SALE"},
 ]
 
 const Navbar = () => {
-
+    const defaultStyle = {
+        color: "grey",
+        textDecoration: "none"
+      };
+      const activeStyle = {
+        color: "red",
+        textDecoration: "none",
+        cursor: "pointer"
+      };
   return (
 <>
-
-    <div style={{display:"flex",justifyContent:"space-around"}}>
-    <p>Stores</p>
-    <img src="https://cdn-icons-png.flaticon.com/512/9435/9435887.png" width="5%" height="5%" alt="" />
-    <div >
-        <input type="text" placeholder='Search' />
-        <Link to="/wishlist" ><img src="https://cdn-icons-png.flaticon.com/512/1216/1216575.png" width="1.5%" height="30%"  alt="" /></Link>
-        <Link to="login"><img src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png"  width="1.5%" height="30%" alt="" /></Link>
-        <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png"  width="1.5%" height="30%"  alt="" />
+<div>
+<h1>COACH</h1>
+    <div style={{marginLeft:"1050px",marginTop:"-50px"}}>
+        <input type="text" placeholder='Search' style={{padding:"10px 20px"}} />
+        <Link to="/wishlist" ><img src="https://cdn-icons-png.flaticon.com/512/1216/1216575.png" width="5%" height="30%"  alt="" style={{marginLeft:"15px",marginTop:"10px"}}  /></Link>
+        <Link to="login"><img src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png"  width="5%" height="30%" alt="" /></Link>
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png"  width="5%" height="30%"  alt="" />
     </div>
     </div>
-    <div style={{display:"flex", justifyContent:"space-evenly" }} >
+    <div style={{display:"flex",gap:"60px",marginLeft:"280px",marginTop:'20px' }} >
         {Links.map((link)=> (
-            <Link to={link.path} > {link.title} </Link> 
+            <NavLink style={({ isActive }) => {
+                return isActive ? activeStyle : defaultStyle;
+              }} key={link.path} to={link.path}>{link.title}</NavLink> 
             ))}
     </div>
 </>
